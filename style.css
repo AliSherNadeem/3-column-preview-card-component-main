@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+    
+}
+.card{
+    display: flex;
+     flex-direction: column;
+    gap: 30px;
+    flex-basis:auto;
+    padding: 30px;
+}
+
+.common{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-inline: 40px; */
+    gap: 30px;
+
+}
+
+.sedans{
+    background-color:hsl(31, 77%, 52%) ;
+
+}
+.suvs{
+    background-color:hsl(184, 100%, 22%) ;
+    
+
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    
+
+}
+.container h1{
+    color: hsl(0, 0%, 95%);
+    
+}
+.container p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    
+}
+.primary-btn button{
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    
+}
+ 
+
+.sedans-btn button{
+    color: hsl(31, 77%, 52%);
+}
+.suvs-btn button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury-btn button{
+    color: hsl(179, 100%, 13%);
+    
+}
+    
+
+
+
+@media (min-width:680px){
+
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+            max-width: 700px;
+            
+        }
+        .common p{
+            font-size: 13px;
+        
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            flex-basis:auto;
+            padding: 40px;
+
+        }
+        
+
+}
